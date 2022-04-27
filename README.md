@@ -12,7 +12,7 @@ The repository provides <sup>1)</sup> source codes for the main results and <sup
 
 ## Requirements
 * Python3
-* PyTorch 1.7.1
+* PyTorch
 * [PyTorch Metric Learning](https://github.com/KevinMusgrave/pytorch-metric-learning)
 * Numpy
 * tqdm
@@ -21,3 +21,31 @@ The repository provides <sup>1)</sup> source codes for the main results and <sup
 * wandb (optional)
 
 ## Installation
+We recommend using Conda (or Virtualenv) to set up an environment.
+
+Our implementation was tested on the following libraries with Python 3.6.
+
+* Install PyTorch:
+```
+pip install torch==1.7.1+cu101 torchvision==0.8.2+cu101 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+```
+
+* Install the other dependencies:
+```
+pip install tqdm
+pip install pandas
+pip install matplotlib
+pip install pytorch-metric-learning
+pip install wandb
+```
+
+## Datasets
+Download three public benchmarks for deep metric learning, and extract the tgz or zip files into `./data/`.
+* [CUB-200-2011](http://www.vision.caltech.edu/datasets/cub_200_2011/)
+* [Cars-196](http://ai.stanford.edu/~jkrause/cars/car_dataset.html) 
+* [Stanford Online Products](https://cvgl.stanford.edu/projects/lifted_struct/)
+
+**(Note)** For Cars-196, download both a tar of all images and annotations for both training and test images from the website, and then, put the files into `./data/cars196`.
+
+## Experiments
+
