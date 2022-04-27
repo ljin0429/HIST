@@ -1,7 +1,7 @@
 # Hypergraph-Induced Semantic Tuplet Loss for Deep Metric Learning (CVPR 2022)
 Official PyTorch implementation of **HIST loss** for deep metric learning | paper (The paper link will be updated soon!)
 
-The repository provides <sup>1)</sup> source codes for the main results and <sup>2)</sup> pre-trained models for quick evaluation.
+This repository provides <sup>1)</sup> source codes for the main results and <sup>2)</sup> pre-trained models for quick evaluation.
 
 ## Requirements
 * Python3
