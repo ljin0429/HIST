@@ -1,12 +1,5 @@
 # Hypergraph-Induced Semantic Tuplet Loss for Deep Metric Learning (CVPR 2022)
-Official PyTorch implementation of **HIST loss** for deep metric learning | paper
-
-## About
-Our HIST loss utilizes multilateral semantic relations between every sample and class for a given mini-batch via hypergraph modeling.
-
-By leveraging multilateral semantic relations, HIST loss enables the embedding network to capture important visual semantics suitable for deep metric learning.
-
-A standard embedding network (*e.g.*, ResNet-50) trained with our HIST loss achieves SOTA performance on three public benckmarks for deep metric learning.
+Official PyTorch implementation of **HIST loss** for deep metric learning | paper (The paper link will be updated soon!)
 
 The repository provides <sup>1)</sup> source codes for the main results and <sup>2)</sup> pre-trained models for quick evaluation.
 
@@ -39,7 +32,7 @@ pip install pytorch-metric-learning
 pip install wandb
 ```
 
-## Datasets
+## Dataset preparation
 Download three public benchmarks for deep metric learning, and extract the tgz or zip files into `./data/`.
 * [CUB-200-2011](http://www.vision.caltech.edu/datasets/cub_200_2011/)
 * [Cars-196](http://ai.stanford.edu/~jkrause/cars/car_dataset.html) 
@@ -47,5 +40,23 @@ Download three public benchmarks for deep metric learning, and extract the tgz o
 
 **(Note)** For Cars-196, download both a tar of all images and annotations for both training and test images from the website, and then, put the files into `./data/cars196`.
 
-## Experiments
+## Training
+Our HIST loss utilizes multilateral semantic relations between every sample and class for a given mini-batch via hypergraph modeling
+(see `./code/hist.py`).
+By leveraging multilateral semantic relations, HIST loss enables the embedding network to capture important visual semantics suitable for deep metric learning.
+A standard embedding network (*e.g.*, ResNet-50) trained with our HIST loss (see `./code/train.py`) achieves SOTA performance on three public benckmarks for deep metric learning.
+
+### CUB-200-2011
+
+
+### Cars-196
+
+
+### Stanford Online Products
+
+
+## Evaluation
+
+## Citation
+
 
