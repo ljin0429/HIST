@@ -120,6 +120,13 @@ python evaluate.py --gpu-id 0
                    --model-path (your_model_path)
 ```
 
+## Acknowledgements
+Our code was implemented, built upon the following great repositories:
+
+* [Proxy Anchor Loss for Deep Metric Learning](https://github.com/tjddus9597/Proxy-Anchor-CVPR2020) (CVPR 2020)
+* [Hypergraph Neural Networks](https://github.com/iMoonLab/HGNN) (AAAI 2019)
+* [PyTorch Metric Learning](https://github.com/KevinMusgrave/pytorch-metric-learning)
+
 ## Citation
 
 
